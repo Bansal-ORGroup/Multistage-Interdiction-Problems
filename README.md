@@ -17,8 +17,8 @@ All test instances are provided in Hierarchical Data Format 5 (HDF5) [(Wiki)](ht
 - Data Structure (name::type)
   - num_node::Int
   - num_arc::Int
-  - arcs::Array{Int64, 2}
-  - capacity::Array{Float64, 3}
+  - arcs::Array{Int64, 2} # in x out nodes
+  - capacity::Array{Float64, 3} # dim: num_stage × num_scenario × num_customer
   - budget::Float64
   - interdict_cost::Array{Float64}
   - lb::Float64
